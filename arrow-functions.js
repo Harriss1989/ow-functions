@@ -4,11 +4,37 @@
  */
 
 // Vanilla JavaScript Function
+// function addtwoNumbers(a, b) {
+//     return a + b;
+// }
+// let sum = addtwoNumbers(3, 5)
+// console.log(sum);
 
 // Arrow Function With Parameters
+const addtwoNumbers = (a, b) => {
+    // code block
+    return a + b;
+}
+let sum = addtwoNumbers(3, 5)
+console.log(sum);
 
-// Single Line Arrow Function With Parameters
+// Single Line Arrow Function With Parameters also valid
+// const addtwoNumbers2 = (a, b) => (a + b);
+const addtwoNumbers2 = (a, b) => a + b;
+let sum2 = addtwoNumbers2(6, 7);
+console.log(sum2);
 
 // Implicit Returns
+const saySomething = message => console.log(message);
+saySomething('Helo there!!');
+
+const sayHello = () => console.log('hello');
+sayHello();
 
 // Returning Multiple Lines
+const returnMultipleLines = () => (
+    `<p>
+        this is a multiline string!
+    </p>`
+)
+console.log(returnMultipleLines());
